@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "print HTML",
+            "type": "shell",
+            //"command": "C:\\Users\\admin\\miniconda3\\condabin\\conda.bat run -n PH413_2026 jupyter nbconvert" ,
+            "command": "C:\\Users\\admin\\miniconda3\\Scripts\\conda.exe run -n PH413_2026 jupyter nbconvert" ,
+            "args": ["${fileBasename}", "--to=html"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
