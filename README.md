@@ -10,3 +10,5 @@ These codes were written in miniconda environment and following libraries are re
   pip3 install torch torchvision
   pip install Pillow==10.1
 </code></pre>
+
+The source of ```stm.txt``` and ```altitude.txt``` is ```https://public.websites.umich.edu/~mejn/cp/programs.html```
