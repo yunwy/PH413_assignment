@@ -11,7 +11,7 @@
             },
             "osx": {
                 "command": "/opt/miniconda3/bin/conda",
-                "args": ["run", "-n", "PH413_2026", "jupyter", "nbconvert", "${fileBasename}", "--to=html"]
+                "args": ["run", "-n", "PH413_2026", "jupyter", "nbconvert", "${fileBasename}", "--to=html", "--HTMLExporter.embed_images=True"]
             },
             "args": ["${fileBasename}", "--to=html"],
             "group": {
