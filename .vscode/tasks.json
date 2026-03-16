@@ -4,8 +4,15 @@
         {
             "label": "print HTML",
             "type": "shell",
-            //"command": "C:\\Users\\admin\\miniconda3\\condabin\\conda.bat run -n PH413_2026 jupyter nbconvert" ,
-            "command": "C:\\Users\\admin\\miniconda3\\Scripts\\conda.exe run -n PH413_2026 jupyter nbconvert" ,
+            "windows": {
+                //"command": "C:\\Users\\admin\\miniconda3\\condabin\\conda.bat run -n PH413_2026 jupyter nbconvert" ,
+                "command": "C:\\Users\\admin\\miniconda3\\Scripts\\conda.exe run -n PH413_2026 jupyter nbconvert",
+                "args": ["${fileBasename}", "--to=html"]
+            },
+            "osx": {
+                "command": "/opt/miniconda3/bin/conda",
+                "args": ["run", "-n", "PH413_2026", "jupyter", "nbconvert", "${fileBasename}", "--to=html"]
+            },
             "args": ["${fileBasename}", "--to=html"],
             "group": {
                 "kind": "build",
